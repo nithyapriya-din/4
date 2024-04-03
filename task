@@ -1,0 +1,252 @@
+Task 1: Simple Programs todo for variables:
+1.Declare four variables without assigning values and print them in console:
+var var1, var2, var3, var4;
+console.log(var1, var2, var3, var4);
+2.How to get value of the variable myvar as output:
+var myvar = 1;
+console.log(myvar);
+3.Declare variables to store your first name, last name, marital status, country, and age in multiple lines:
+var firstName = "John";
+var lastName = "Doe";
+var maritalStatus = "Single";
+var country = "USA";
+var age = 30;
+
+4.Declare variables to store your first name, last name, marital status, country, and age in a single line:
+var firstName = "John", lastName = "Doe", maritalStatus = "Single", country = "USA", age = 30;
+5.Declare variables and assign string, boolean, undefined, and null data types:
+var myString = "Hello";
+var myBoolean = true;
+var myUndefined = undefined;
+var myNull = null;
+6.Convert the string to integer:
+var stringNumber = "10";
+var integerNumber1 = parseInt(stringNumber);
+var integerNumber2 = Number(stringNumber);
+var integerNumber3 = +stringNumber;
+
+console.log(integerNumber1, integerNumber2, integerNumber3); // Output: 10 10 10
+7.Write 6 statements which provide truthy & falsey values:
+Truthy values:
+// Statements returning truthy values
+console.log(1 === 1); // true
+console.log("hello"); // true
+console.log(10 > 5); // true
+Falsey values:
+// Statements returning falsey values
+console.log(0 === 1); // false
+console.log(""); // false
+console.log(undefined); // false
+Task 2: Simple Programs todo for Operators:
+1.Square of a number:
+var number = 5;
+var square = number * number;
+console.log("Square of", number, "is", square);
+2.Swapping 2 numbers:
+var a = 5;
+var b = 10;
+console.log("Before swapping: a =", a, "b =", b);
+var temp = a;
+a = b;
+b = temp;
+console.log("After swapping: a =", a, "b =", b);
+
+3.Addition of 3 numbers:
+var num1 = 5;
+var num2 = 10;
+var num3 = 15;
+var sum = num1 + num2 + num3;
+console.log("Sum of", num1, ",", num2, "and", num3, "is", sum);
+4.Celsius to Fahrenheit conversion:
+var celsius = 25;
+var fahrenheit = (celsius * 9/5) + 32;
+console.log(celsius, "Celsius is equal to", fahrenheit, "Fahrenheit");
+5.Meter to miles:
+var meter = 1000;
+var miles = meter / 1609.34;
+console.log(meter, "meters is equal to", miles, "miles");
+6.Pounds to kg:
+var pounds = 10;
+var kg = pounds * 0.453592;
+console.log(pounds, "pounds is equal to", kg, "kilograms");
+7.Calculate Batting Average:
+var runsScored = 500;
+var numberOfOuts = 10;
+var battingAverage = runsScored / numberOfOuts;
+console.log("Batting Average:", battingAverage);
+8.Calculate five test scores and print their average:
+var score1 = 80;
+var score2 = 75;
+var score3 = 85;
+var score4 = 90;
+var score5 = 95;
+var average = (score1 + score2 + score3 + score4 + score5) / 5;
+console.log("Average score:", average);
+
+9.Power of any number x ^ y:
+var x = 2;
+var y = 3;
+var power = Math.pow(x, y);
+console.log(x, "raised to the power of", y, "is", power);
+10.Calculate Simple Interest:
+var principal = 1000;
+var rate = 5;
+var time = 2;
+var simpleInterest = (principal * rate * time) / 100;
+console.log("Simple Interest:", simpleInterest);
+11.Calculate area of an equilateral triangle:
+var sideLength = 5;
+var area = (Math.sqrt(3) / 4) * sideLength * sideLength;
+console.log("Area of equilateral triangle:", area);
+12.Area Of Isosceles Triangle:
+var base = 10;
+var height = 8;
+var area = (base * height) / 2;
+console.log("Area of isosceles triangle:", area);
+13.Volume Of Sphere:
+var radius = 5;
+var volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+console.log("Volume of sphere:", volume);
+14.Volume Of Prism:
+var baseArea = 50;
+var height = 10;
+var volume = baseArea * height;
+console.log("Volume of prism:", volume);
+15.Find area of a triangle:
+var base = 8;
+var height = 6;
+var area = (base * height) / 2;
+console.log("Area of triangle:", area);
+16.Give the Actual cost and Sold cost, Calculate Discount Of Product:
+var actualCost = 100;
+var soldCost = 80;
+var discount = actualCost - soldCost;
+console.log("Discount of product:", discount);
+17.Given their radius of a circle and find its diameter, circumference, and area:
+var radius = 5;
+var diameter = 2 * radius;
+var circumference = 2 * Math.PI * radius;
+var area = Math.PI * Math.pow(radius, 2);
+console.log("Diameter:", diameter);
+console.log("Circumference:", circumference);
+console.log("Area:", area);
+18.Given two numbers and perform all arithmetic operations:
+var num1 = 10;
+var num2 = 5;
+console.log("Sum:", num1 + num2);
+console.log("Difference:", num1 - num2);
+console.log("Product:", num1 * num2);
+console.log("Quotient:", num1 / num2);
+console.log("Remainder:", num1 % num2);
+19.Display the asterisk pattern:
+console.log("*****");
+console.log("*****");
+console.log("*****");
+console.log("*****");
+console.log("*****");
+20.Calculate electricity bill:
+var wattsPerHour = 100;
+var hoursPerDay = 24;
+var daysPerMonth = 30;
+var ratePerUnit = 10;
+var totalUnits = (wattsPerHour * hoursPerDay * daysPerMonth) / 1000;
+var bill = totalUnits * ratePerUnit;
+console.log("Electricity bill:", bill);
+21.Program To Calculate CGPA:
+var subjects = 5;
+var subject1Grade = 8;
+var subject2Grade = 9;
+var subject3Grade = 7;
+var subject4Grade = 8.5;
+var subject5Grade = 9.5;
+var totalGradePoints = subject1Grade + subject2Grade + subject3Grade + subject4Grade + subject5Grade;
+var CGPA = totalGradePoints / subjects;
+console.log("CGPA:", CGPA);
+Task 3: Simple Programs todo for Condition , Looping and Arrays:
+1.Write a loop that makes seven calls to console.log to output the following triangle:
+for (var line = "#"; line.length <= 7; line += "#")
+  console.log(line);
+2.Iterate through the string array and print its contents:
+var strArray = ["<option>Jazz</option>", "<option>Blues</option>", "<option>New Age</option>", "<option>Classical</option>", "<option>Opera</option>"];
+for (var i = 0; i < strArray.length; i++)
+  console.log(strArray[i]);
+3.Count the elements in the array without using the length property:
+var myarray = [11, 22, 33, 44, 55];
+var count = 0;
+for (var i in myarray)
+  count++;
+console.log("Number of elements in the array:", count);
+4.Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”:
+let friends = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+function dataHandling(input) {
+  for (var i = 0; i < input.length; i++) {
+    if (input[i] === "Mari")
+      input[i] = "Munnabai";
+  }
+  return input;
+}
+console.log(dataHandling(friends));
+5.Starting from the friends variable below, Loop and Print the names till you meet CaptainAmerica:
+const friends = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+function dataHandling(input) {
+  for (var i = 0; i < input.length; i++) {
+    console.log(input[i]);
+    if (input[i] === "CaptianAmerica")
+      break;
+  }
+}
+dataHandling(friends);
+6.Find the person is your friend or not:
+const friends = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+function dataHandling(input, name) {
+  for (var i = 0; i < input.length; i++) {
+    if (input[i] === name)
+      return true;
+  }
+  return false;
+}
+let found = dataHandling(friends, "Jeff");
+console.log(found);
+7.Combine two lists of friends into one alphabetically-sorted list:
+var friends1 = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+var friends2 = ["Gabbar", "Rajinikanth", "Mass", "Spiderman", "Jeff", "ET"];
+
+function dataHandling(input) {
+  var combinedList = input[0].concat(input[1]);
+  combinedList.sort();
+  return combinedList;
+}
+
+console.log(dataHandling([friends1, friends2]));
+8.Get the first item, the middle item, and the last item of the array:
+var friends = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+console.log("First item:", friends[0]);
+console.log("Middle item:", friends[Math.floor(friends.length / 2)]);
+console.log("Last item:", friends[friends.length - 1]);
+var friends = ["Mari", "MaryJane", "CaptianAmerica", "Munnabai", "Jeff", "AAK chandran"];
+console.log("First item:", friends[0]);
+console.log("Middle item:", friends[Math.floor(friends.length / 2)]);
+console.log("Last item:", friends[friends.length - 1]);
+9.Print the contents of the input variable:
+var input = [
+  ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"],
+  ["0002", "Dika Sembiring", "Medan", "10/10/1992", "Bermain Gitar"],
+  ["0003", "Winona", "Ambon", "25/12/1965", "Memasak"],
+  ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
+];
+
+function dataHandling(input) {
+  for (var i = 0; i < input.length; i++) {
+    console.log("Nomor ID:", input[i][0]);
+    console.log("Nama Lengkap:", input[i][1]);
+    console.log("TTL:", input[i][2], input[i][3]);
+    console.log("Hobi:", input[i][4]);
+    console.log("\n");
+  }
+}
+
+dataHandling(input);
+
+
+
+
